@@ -1,0 +1,10 @@
+[package]
+name = "factorial"
+version = "0.1.0"
+authors = ["John Doneth <Doneth7@gmail.com>"]
+
+[lib]
+path = "src/factorial.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
