@@ -10,7 +10,7 @@ Each language test generates a standalone WASM binary that has a shared WASM fun
 
 This project is not associated with the [wasmi](https://github.com/paritytech/wasmi) project and is merely for researching how [WebAssembly](https://webassembly.org/) can be just another abstraction in any project. 
 
-[Parity Technologies](https://github.com/paritytech) are developing/using [WebAssembly ](https://webassembly.org/)with [wasmi](https://github.com/paritytech/wasmi) as a target for their smart cryptocurrency contracts but [WebAssembly ](https://webassembly.org/)has many other uses than just cryptocurrency.
+[Parity Technologies](https://github.com/paritytech) are developing/using [WebAssembly ](https://webassembly.org/)with [wasmi](https://github.com/paritytech/wasmi) as a target for their smart cryptocurrency contracts but [WebAssembly ](https://webassembly.org/)potentially has other uses cases than cryptocurrency or the web.
 
 ## Supported Languages
 
