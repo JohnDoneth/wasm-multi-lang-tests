@@ -60,4 +60,8 @@ if n > 1 {
 
 The wasm-runner cargo project in the repository root when executed will recursively find any wasm modules in the 'generated' folder and, if they are named appropriately, run the matching test on it.
 
-`generated/rust/factorial.wasm` will be executed by test function `add_test`
+For Example:
+
+`generated/rust/factorial.wasm` will be executed by test function `factorial_test` in the runner
+
+`generated/rust/add.wasm` will be executed by test function `add_test` in the runner
