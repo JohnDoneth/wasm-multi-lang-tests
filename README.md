@@ -1,8 +1,8 @@
-# wasm-multi-language-tests
+# wasm-multi-lang-tests
 
-For fun I made this project to compile a bunch of languages to [WebAssembly](https://webassembly.org/) and run all of the generated WASM using the [wasmi](https://github.com/paritytech/wasmi) library.
+For fun I made this project to compile a bunch of different programming languages to [WebAssembly](https://webassembly.org/) and run all of the generated WASM using the [wasmi](https://github.com/paritytech/wasmi) library.
 
-Each language generates a WASM binary that has a shared WASM function that can be called from [wasmi](https://github.com/paritytech/wasmi).
+Each language test generates a standalone WASM binary that has a shared WASM function that can be called from [wasmi](https://github.com/paritytech/wasmi) by the test runner.
 
 ---
 
@@ -14,13 +14,15 @@ This project is not associated with the [wasmi](https://github.com/paritytech/wa
 
 ## Supported Languages
 
-The languages currently supported are the following. Any language that supports compiling to WebAssembly should be able to complete the tests.
+The languages currently supported are the following.
 
 - C
 - C++
 - Rust
 
-## Building WebAssembly modules
+Any language that supports compiling to WebAssembly should be able to complete the tests.
+
+## Building WebAssembly Test modules
 
 ### Rust
 
@@ -54,7 +56,7 @@ if n > 1 {
 } 
 ```
 
-### Running the build WebAssembly Tests
+### Running the built WebAssembly modules
 
 The wasm-runner cargo project in the repository root when executed will recursively find any wasm modules in the 'generated' folder and, if they are named appropriately, run the matching test on it.
 
